@@ -1,0 +1,80 @@
+<!-- Hola :) 
+Título 
+
+Sobre mí (texto)
+Intereses (lista)
+Enlaces de interés (lista e imágen)
+Derechos reservados (Pie de página) 
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica de html semántico</title>
+</head>
+<body>
+    <header>
+        <h1>Un página sobre mí :)</h1>
+
+
+        <!-- Menú de navegación
+         Es más fácil trabar el dise si se agrupan  utilizando listas no ordenadas -->
+        <nav>
+            <ul> 
+                <li>Sobre mí</li>
+                <li>Intereses</li>
+                <li>Enlaces de interés</li>
+            </ul>
+        </nav>
+        <!-- Main: Sección principal que contiene el contenido central de la página.
+         Se recomienda utilizar un main por página. -->
+
+         <main>
+            <section>
+                <h2>Sobre mí</h2>
+                <p>Mi nombre es Pedro Manuel Cardón Carrillo. Estoy aprendiendo HTML :)</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat 
+                    quisquam cumque facilis alias error consequatur. Excepturi quo, 
+                    assumenda perferendis repellat inventore, aperiam ratione aliquam
+                     doloribus dolores ipsum praesentium culpa at?</p>
+            </section>
+
+
+            <!-- useful shortcut: li*n -->
+             
+            <section>
+                <h2>Intereses</h2>
+                <ul>
+                    <li>Programación</li>
+                    <li>Música</li>
+                    <li>Dibujo</li>
+                    <li>Matemáticas</li>
+                </ul>
+                <!-- Figure: agrupa contenido visual como imágenes y es común utilizarla junto con 
+                 la etiqueta figcaption, que proporciona un título o descripción para el contenido 
+                 visual -->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1435224668334-0f82ec57b605?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D"
+                    alt="somwthing went wrong"
+                    title="Lost stars">
+                    <figcaption>Lost stars</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Enlaces de interés</h2>
+                <p>Visita estos sitios recomendados para aprender desarrollo web.</p>
+                <!-- a es una etiqueta de enlaces que generalmente viene acompañada del
+                 atributo href donde agregamos la dirección de a la que queremos redireccionar.
+                 El atributo target permite indicar cómo se va a abrir el enlace. -->
+                <a href="https://www.w3schools.com" target = "_blank">w3School</a>
+            </section>
+         </main>
+
+    </header>
+    <footer>&copy; Todos los derechos reservados</footer>
+</body>
+</html>
