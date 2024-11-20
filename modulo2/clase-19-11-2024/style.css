@@ -1,0 +1,19 @@
+body {
+    /*En CSS los comentarios se poenen de esta manera :)*/
+
+    /*Tipografía*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* Interlineado */
+    line-height: 1.5; 
+}
+
+header {
+    background-color: #018a68;
+    color: #FFF; 
+    /* text-align solo funciona en contenidos en bloque*/
+    text-align: center;  
+}
+
+footer {
+    background-color:#FFF
+}
