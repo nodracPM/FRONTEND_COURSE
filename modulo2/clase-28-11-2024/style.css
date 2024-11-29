@@ -40,3 +40,71 @@ footer {
     text-align:center; 
     padding:10px; 
 }
+
+.seleccion-tarjetas{
+    text-align: center; 
+    padding: 20px; 
+}
+
+.contenedor-tarjetas{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction:row; 
+    height: 600px; 
+    justify-content: center; 
+    align-items: center; ;
+    gap: 20px;
+}
+
+.card{
+    background-color: #D00000; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s, background-color 0.3s; 
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    background-color: #ff2828
+}
+
+.especial{
+    /* Ocupa más espacio proporcionalmente */
+    flex-grow: 2; 
+}
+
+.carta-hover:hover{
+    transform: rotate(20deg) scale(1.1); 
+}
+
+.card:nth-child(1){
+    /* Align-self only has effect when the parent has a height defined*/
+    align-self: flex-start;
+}
+
+.card:nth-child(3){
+    order: -1; 
+}
+
+/* Formulario */
+
+form{
+    display:flex; 
+    flex-direction: column;
+    gap:10px; 
+    width: 400px; 
+    margin: 0 auto; 
+}
+
+button{
+    background-color: #820000; 
+    color: white;
+    border: none; 
+}
+
+button:hover{
+    background-color:#ff2828;
+}
