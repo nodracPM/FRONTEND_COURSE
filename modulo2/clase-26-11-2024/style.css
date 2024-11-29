@@ -1,0 +1,69 @@
+/* Variables */
+
+:root {
+    --primary-color: #3960a3; 
+    --secondary-color: #182f57; 
+    --background: #f0ece4; 
+}
+
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    /* Los márgenes, padding y border no se heredan */
+    margin: 0; 
+    padding: 0; 
+    /* Estilos generales que los hijos heredan */
+    font-family: sans-serif;
+    color: var(--secondary-color); 
+    background-color:#f0ece4; 
+}
+
+/* Según la prioridad de especificidad, se da prioridad a los selectores más específicos */
+h1 {
+    color: var(--primary-color); 
+}
+header h1 {
+    color: var(--primary-color); 
+}
+
+header, main, footer {
+    margin: 0; 
+    padding: 20px; 
+}
+
+footer {
+    text-align: center; 
+}
+
+.author {
+    font-weight: bold;
+    color: var(--primary-color); 
+}
+
+.subtitle {
+    color: var(--secondary-color); 
+    font-size: 18px; 
+}
+
+.lista-tareas {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 25px;
+}
+
+.lista-tareas li {
+    margin-bottom: 15px; 
+}
+
+.tarea-checkbox {
+    margin-right: 10px; 
+    accent-color: var(--primary-color); 
+    cursor: pointer; 
+}
+
+.tarea-checkbox:checked + .tarea-descripcion {
+    text-decoration: line-through;
+}
