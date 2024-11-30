@@ -1,19 +1,63 @@
+:root{
+    /* Light theme */
+    --light-primary-color: #9D0000;
+    --light-secondary-color: #D00000;
+    --light-third-color: #660000e1;
+    --light-font-color: #000000;
+    --light-headers-color: #ffffff;
+    --light-enphasis-color: #ff2828;
+    --light-background-color: #f4f4f4e2;
+    
+    /* Dark theme */
+    --dark-primary-color: #052c3f;
+    --dark-secondary-color: #898989;
+    --dark-third-color: #001d3b;
+    --dark-font-color: #ffffff;
+    --dark-headers-color: #ffffff;
+    --dark-enphasis-color: #3283c6;
+    --dark-background-color: #0b1220;
+}
+
+/* Use of variables according to the theme */
+
 *{
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
 }
 
+body.light-theme{
+    --primary-color: var(--light-primary-color);
+    --secondary-color: var(--light-secondary-color); 
+    --font-color: var(--light-font-color); 
+    --headers-color: var(--light-headers-color);
+    --background-color: var(--light-background-color); 
+    --third-color: var(--light-third-color);
+    --emphasis-color: var(--light-enphasis-color);
+}
+
+body.dark-theme{
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color); 
+    --font-color: var(--dark-font-color);
+    --headers-color: var(--dark-headers-color);
+    --background-color: var(--dark-background-color);
+    --third-color: var(--dark-third-color);
+    --emphasis-color: var(--dark-enphasis-color);
+}
+
 body{
     font-family: sans-serif;
-    background-color: white; 
-    color: #820000; 
+    background-color: var(--background-color); 
+    color: var(--font-color); 
     line-height:1.5; 
     transition: background-color 0.3s, color 0.3s; 
 }
 
 header{
     text-align: center; 
+    color: var(--headers-color);
+    background-color: var(--third-color);
     padding:20px; 
 }
 
@@ -21,22 +65,24 @@ header{
     display: flex; 
     justify-content: space-around;
     padding: 10px, 20px;
-    background-color: #F4F4F4;   
+    background-color: var(--third-color);   
 }
 
 .nav-link, .theme-button{
     text-decoration: none; 
     font-weight: bold; 
-    color: #676767; 
+    color: var(--headers-color); 
     cursor: pointer; 
     transition: color 0.3s;
 }
 
 .nav-link:hover, .them-button:hover{
-    color: #9D0000; 
+    color:var(--emphasis-color); 
 }
 
 footer {
+    background-color: var(--third-color);
+    color: var(--headers-color);
     text-align:center; 
     padding:10px; 
 }
@@ -57,8 +103,8 @@ footer {
 }
 
 .card{
-    background-color: #D00000; 
-    color: white; 
+    background-color: var(--primary-color); 
+    color: var(--headers-color); 
     border-radius: 10px; 
     padding: 20px; 
     text-align: center; 
@@ -68,7 +114,7 @@ footer {
 
 .card:hover{
     transform: scale(1.05); 
-    background-color: #ff2828
+    background-color: var(--emphasis-color)
 }
 
 .especial{
@@ -100,11 +146,11 @@ form{
 }
 
 button{
-    background-color: #820000; 
-    color: white;
+    background-color: var(--primary-color); 
+    color: var(--headers-color);    
     border: none; 
 }
 
 button:hover{
-    background-color:#ff2828;
+    background-color:var(--emphasis-color);
 }
