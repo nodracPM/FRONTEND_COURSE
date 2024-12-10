@@ -25,16 +25,21 @@ body{
 }
 
 .nav-bar{
-    padding: 10px 20px;
-
+    padding: 15px 30px;
+    
     display:flex; 
     justify-content: space-between; 
     align-items:center;
+    width: 100%;
 
-
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
 
     font-size: 15px; 
     font-weight: bold; 
+
+    background-color: var(--background-color);
 }
 
 .logo{
@@ -74,7 +79,8 @@ body{
 }
 
 .search-bar:focus{
-    outline: none;  
+    /*Outline is used to highlight the selected element*/
+    /*outline: none;*/
 }
 
 .user-menu{
@@ -114,7 +120,8 @@ body{
 }
 
 .cards-container{
-    margin: 10px; 
+    margin: 10px;
+    margin-top: 70px;  
 
     display:flex; 
     width: 80%; 
@@ -180,16 +187,29 @@ body{
 }
 
 .card-options span a{
-    padding: 10px; 
+    padding: 15px; 
     margin: 0 5px; 
     border-radius: 20px; 
 
+    font-size: 15px; 
+    font-weight: bold;
     color: var(--font-color2);
     text-decoration: none; 
 
+    background-color: var(--third-color); 
+
+    transition: background-color 0.3s;
+}
+
+.card-options span a:hover{
     background-color: var(--background-color); 
 }
 
 .card-shadow p{
     font-size: 22px;  
+}
+
+footer{
+    font-size: 10px;
+    color: gray;
 }
