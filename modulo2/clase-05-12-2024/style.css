@@ -18,10 +18,19 @@
 
 body{
     padding: 12px; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+
     font-family: sans-serif, Helvetica, Arial; 
     text-align: center; 
     line-height: 1.5; 
     background-color: var(--background-color);
+}
+
+main{
+    flex-grow: 1; 
 }
 
 .nav-bar{
@@ -210,6 +219,7 @@ body{
 }
 
 footer{
+    flex-grow: 0; 
     font-size: 10px;
     color: gray;
 }
