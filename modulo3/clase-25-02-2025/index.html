@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <h1 id="'title">Password Generator</h1>
+    </header>
+    <main>
+        <section class='passWordContainer'>
+            <p id="password">Password</p>
+            <button id="copyButton">Copy</button>
+        </section>
+
+       <section class='optionsContainer'>
+            <form id="form">
+                <div>
+                    <label for="characterLenght" class="checkboxLabel">Character lenght</label>
+                    <p id="characterLenghtShow">4</p>
+                </div>
+                <input type="range" name="charecterLenght" class="slider" min="4" max="15" value="4">
+
+                <input type="checkbox" name="includeUppercase" class="checkbox" id="checkIncludeUppercase">
+                <label for="includeUpperCase" class="checkboxLabel">Include uppercase letters</label>
+                
+                <input type="checkbox" name="includeLowercase" class="checkbox" id="checkIncludeLowercase">
+                <label for="includeLowerCase" class="checkboxLabel">Include lowercase letters</label>
+
+                <input type="checkbox" name="includeNumbers" class="checkbox" id="checkIncludeNumbers">
+                <label for="includeNumbers" class="checkBoxLabel">Include numbers</label>
+
+                <input type="checkbox" name="includeSymbols" class="checkbox" id="checkIncludeSymbols">
+                <label for="includeSymbols" class="checkBoxLabel">Include symbols</label>
+
+                <button id="generateButton">Generate Password</button>
+            </form>
+       </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"> </script>  
+</body>
+</html>
