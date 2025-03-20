@@ -1,0 +1,114 @@
+:root{
+    --primary_color: #4AC700; 
+    --secondary_color: #676767; 
+    --thrid_color: #5FDF13;
+    --background_color: #000000;    
+    --font_color: #ffffff;
+
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px; 
+}
+
+body{
+    margin: auto; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+
+    font-family: sans-serif, Helvetica, Arial; 
+    text-align: center; 
+}
+
+header{
+    margin: 3rem 2rem; 
+}
+
+title{
+    margin: auto; 
+    padding: 3rem;
+}
+
+.passWordContainer{    
+    margin: auto; 
+    
+    display: flex; 
+    justify-content: space-around; 
+    
+    width: 40%;
+    
+    text-align: center;
+}
+
+
+#password{
+    margin: auto 0rem;
+    
+    width: 50%;
+    
+}
+
+#copyButton{
+    margin: auto 2rem;
+}
+
+.optionsContainer{
+    margin: auto; 
+}
+
+.formContainer{
+    margin: auto;
+    padding: 3rem;  
+    
+    width: 70%;
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    
+    text-align: left; 
+}
+
+.characterLenghtContainer{
+    margin: auto; 
+
+    display: flex; 
+    justify-content: space-between; 
+
+    width: 50%; 
+
+    text-align: center; 
+}
+
+.parametersContainer{
+    margin: auto;
+    margin-bottom: 1rem;   
+
+    width: 60%; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.checkboxContainer{
+    margin: auto;
+
+    width: 100%; 
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+.slider{
+    margin-bottom:  1rem;  
+}
+

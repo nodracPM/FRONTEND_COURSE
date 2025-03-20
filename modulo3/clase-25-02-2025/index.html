@@ -17,24 +17,34 @@
         </section>
 
        <section class='optionsContainer'>
-            <form id="form">
-                <div>
+            <form id="form"class="formContainer">
+                <div class="characterLenghtContainer">
                     <label for="characterLenght" class="checkboxLabel">Character lenght</label>
                     <p id="characterLenghtShow">4</p>
                 </div>
-                <input type="range" name="charecterLenght" class="slider" min="4" max="15" value="4">
 
-                <input type="checkbox" name="includeUppercase" class="checkbox" id="checkIncludeUppercase">
-                <label for="includeUpperCase" class="checkboxLabel">Include uppercase letters</label>
-                
-                <input type="checkbox" name="includeLowercase" class="checkbox" id="checkIncludeLowercase">
-                <label for="includeLowerCase" class="checkboxLabel">Include lowercase letters</label>
-
-                <input type="checkbox" name="includeNumbers" class="checkbox" id="checkIncludeNumbers">
-                <label for="includeNumbers" class="checkBoxLabel">Include numbers</label>
-
-                <input type="checkbox" name="includeSymbols" class="checkbox" id="checkIncludeSymbols">
-                <label for="includeSymbols" class="checkBoxLabel">Include symbols</label>
+                <div class="parametersContainer">
+                    <input type="range" name="charecterLenght" class="slider" min="4" max="15" value="4">
+                    
+                    <div class="checkboxContainer"> 
+                        <label for="includeUpperCase" class="checkboxLabel">Include uppercase letters</label>
+                        <input type="checkbox" name="includeUppercase" class="checkbox" id="checkIncludeUppercase">
+                    </div>
+                        
+                    <div class="checkboxContainer"> 
+                        <label for="includeLowerCase" class="checkboxLabel">Include lowercase letters</label>
+                        <input type="checkbox" name="includeLowercase" class="checkbox" id="checkIncludeLowercase">
+                    </div>
+                    <div class="checkboxContainer"> 
+                        <label for="includeNumbers" class="checkBoxLabel">Include numbers</label>
+                        <input type="checkbox" name="includeNumbers" class="checkbox" id="checkIncludeNumbers">
+                    </div>
+    
+                    <div class="checkboxContainer"> 
+                        <label for="includeSymbols" class="checkBoxLabel">Include symbols</label>
+                        <input type="checkbox" name="includeSymbols" class="checkbox" id="checkIncludeSymbols">
+                    </div>
+                </div>
 
                 <button id="generateButton">Generate Password</button>
             </form>
