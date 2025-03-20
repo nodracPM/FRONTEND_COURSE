@@ -41,34 +41,29 @@ title{
     margin: auto; 
     
     display: flex; 
-    justify-content: space-around; 
+    justify-content: space-between; 
     
-    width: 40%;
+    width: 30%;
     
     text-align: center;
 }
 
-
 #password{
-    margin: auto 0rem;
+    margin: 0.25rem;
     
     width: 50%;
     
 }
 
 #copyButton{
-    margin: auto 2rem;
-}
-
-.optionsContainer{
-    margin: auto; 
+    margin: 0.25rem;
 }
 
 .formContainer{
     margin: auto;
     padding: 3rem;  
     
-    width: 70%;
+    width: 35%;
     
     display: flex; 
     flex-direction: column; 
@@ -108,7 +103,14 @@ title{
     justify-content: space-between;
 }
 
-.slider{
-    margin-bottom:  1rem;  
-}
+    .slider{
+        margin-bottom:  1rem;  
+    }
 
+
+
+#generateButton{
+    margin: auto;
+    padding: 0.5rem;
+    width: 50%; 
+}
