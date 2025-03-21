@@ -1,7 +1,7 @@
 :root{
     --primary_color: #4AC700; 
     --secondary_color: #676767; 
-    --thrid_color: #5FDF13;
+    --thrid_color: #50c40e;
     --background_color: #000000;    
     --font_color: #ffffff;
 
@@ -24,17 +24,44 @@ body{
     flex-direction: column; 
     justify-content: space-around; 
 
-    font-family: sans-serif, Helvetica, Arial; 
+    font-family: "Doto", sans-serif, Helvetica, Arial; 
     text-align: center; 
+
+    background: url(background.gif) no-repeat center center fixed;
+    background-size: cover; 
+    color: var(--font_color);
 }
+
 
 header{
     margin: 3rem 2rem; 
 }
 
+.overlay{
+    position: relative; 
+    z-index: 1; 
+}
+
 title{
     margin: auto; 
     padding: 3rem;
+}
+
+.videoContainer{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1;
+}
+
+
+#copyButton{
+    padding: 0.5rem; 
+
+    border: none; 
+    border-radius: 0.5rem;
 }
 
 .passWordContainer{    
@@ -50,13 +77,28 @@ title{
 
 #password{
     margin: 0.25rem;
+    padding: 0.5rem 1rem;
+
+    background-color: var(--secondary_color);
+    border-radius: 0.5rem;
     
-    width: 50%;
+    width: 60%;
     
 }
 
 #copyButton{
     margin: 0.25rem;
+
+    cursor: pointer; 
+
+    transition: background-color 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+}
+
+#copyButton:hover{
+    background-color: var(--thrid_color);
+    transform: scale(1.1);
+    color: var(--font_color); 
 }
 
 .formContainer{
@@ -78,7 +120,7 @@ title{
     display: flex; 
     justify-content: space-between; 
 
-    width: 50%; 
+    width: 70%; 
 
     text-align: center; 
 }
@@ -87,7 +129,7 @@ title{
     margin: auto;
     margin-bottom: 1rem;   
 
-    width: 60%; 
+    width: 80%; 
     
     display: flex; 
     flex-direction: column; 
@@ -104,13 +146,48 @@ title{
 }
 
     .slider{
-        margin-bottom:  1rem;  
+        margin: 1rem 0rem;  
+        background: var(--thrid_color);
+
+        cursor: pointer; 
+    }
+
+    .checkbox{
+        cursor: pointer; 
+
+        accent-color: var(--thrid_color);
     }
 
 
-
 #generateButton{
-    margin: auto;
-    padding: 0.5rem;
+    margin: 1rem auto;
+    padding: 0.5rem 0.5rem;
     width: 50%; 
+
+    font-size: 1rem;
+    font-family: 'Doto', sans-serif;
+
+    border-radius: 0.5rem; 
+    border: none; 
+
+    cursor: pointer; 
+
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
+
+#generateButton:hover{
+    background-color: var(--thrid_color);
+    transform: scale(1.05); 
+
+    color:#ffffff; 
+}
+
+
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: var(--thrid_color); /* Change this to your desired color */
+    border-radius: 5px;
+  }
